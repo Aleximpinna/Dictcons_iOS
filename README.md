@@ -23,4 +23,10 @@ J'apprends le développement iOS, des petits projets comme celui là me permet d
 
 Oh, c'est gentil, tu peux retrouver principalement des informations sur moi sur mon [site web](http://aleximpinna.com)!
 
+## Une petite capture d'écran de l'application?
+
+Bien sur! 
+
+
+
 
