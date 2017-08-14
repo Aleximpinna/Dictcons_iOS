@@ -12,7 +12,25 @@
 		C31E169E1F328D7000197F48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31E169C1F328D7000197F48 /* Main.storyboard */; };
 		C31E16A01F328D7000197F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31E169F1F328D7000197F48 /* Assets.xcassets */; };
 		C31E16A31F328D7000197F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31E16A11F328D7000197F48 /* LaunchScreen.storyboard */; };
+		C31E16B31F32A08A00197F48 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E16B21F32A08A00197F48 /* CreditsViewController.swift */; };
+		C31E16B51F32A09800197F48 /* Proverbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E16B41F32A09800197F48 /* Proverbe.swift */; };
+		C3B3EF1E1F335CAD007D56F1 /* Hue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B3EF1D1F335CAD007D56F1 /* Hue.framework */; };
+		C3B3EF1F1F335CAD007D56F1 /* Hue.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3B3EF1D1F335CAD007D56F1 /* Hue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C31E16AE1F32A04100197F48 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C3B3EF1F1F335CAD007D56F1 /* Hue.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C31E16951F328D7000197F48 /* Proverbe Sans Fin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proverbe Sans Fin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +40,9 @@
 		C31E169F1F328D7000197F48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31E16A21F328D7000197F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31E16A41F328D7000197F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31E16B21F32A08A00197F48 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		C31E16B41F32A09800197F48 /* Proverbe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proverbe.swift; sourceTree = "<group>"; };
+		C3B3EF1D1F335CAD007D56F1 /* Hue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hue.framework; path = Carthage/Build/iOS/Hue.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B3EF1E1F335CAD007D56F1 /* Hue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +60,7 @@
 		C31E168C1F328D7000197F48 = {
 			isa = PBXGroup;
 			children = (
+				C3B3EF1D1F335CAD007D56F1 /* Hue.framework */,
 				C31E16971F328D7000197F48 /* Proverbe Sans Fin */,
 				C31E16961F328D7000197F48 /* Products */,
 			);
@@ -56,6 +79,8 @@
 			children = (
 				C31E16981F328D7000197F48 /* AppDelegate.swift */,
 				C31E169A1F328D7000197F48 /* ViewController.swift */,
+				C31E16B21F32A08A00197F48 /* CreditsViewController.swift */,
+				C31E16B41F32A09800197F48 /* Proverbe.swift */,
 				C31E169C1F328D7000197F48 /* Main.storyboard */,
 				C31E169F1F328D7000197F48 /* Assets.xcassets */,
 				C31E16A11F328D7000197F48 /* LaunchScreen.storyboard */,
@@ -74,6 +99,8 @@
 				C31E16911F328D7000197F48 /* Sources */,
 				C31E16921F328D7000197F48 /* Frameworks */,
 				C31E16931F328D7000197F48 /* Resources */,
+				C31E16AA1F32A00E00197F48 /* ShellScript */,
+				C31E16AE1F32A04100197F48 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +159,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C31E16AA1F32A00E00197F48 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C31E16911F328D7000197F48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C31E169B1F328D7000197F48 /* ViewController.swift in Sources */,
+				C31E16B31F32A08A00197F48 /* CreditsViewController.swift in Sources */,
+				C31E16B51F32A09800197F48 /* Proverbe.swift in Sources */,
 				C31E16991F328D7000197F48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +308,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D389H9X5H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Proverbe Sans Fin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aleximpinna.Proverbe-Sans-Fin";
@@ -275,6 +326,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D389H9X5H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Proverbe Sans Fin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aleximpinna.Proverbe-Sans-Fin";
@@ -302,6 +358,7 @@
 				C31E16A91F328D7000197F48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
