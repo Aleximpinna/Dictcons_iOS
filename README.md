@@ -27,8 +27,8 @@ Oh, c'est gentil, tu peux retrouver principalement des informations sur moi sur 
 
 Bien sur! 
 
-![Screenshot 1](https://raw.githubusercontent.com/aleximpinna/DictonsSansFin/master/screen.png)
-![Screenshot 2](https://raw.githubusercontent.com/aleximpinna/DictonsSansFin/master/screen.png)
+![Screenshot 1](https://raw.githubusercontent.com/aleximpinna/DictonsSansFin/master/screen1.png)
+![Screenshot 2](https://raw.githubusercontent.com/aleximpinna/DictonsSansFin/master/screen2.png)
 
 
 
