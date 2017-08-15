@@ -12,7 +12,7 @@
         <!--CreditsVC-->
         <scene sceneID="TVD-2k-JC2">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="EEt-r9-xzs" userLabel="CreditsVC" customClass="CreditsViewController" customModule="Proverbe_Sans_Fin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EEt-r9-xzs" userLabel="CreditsVC" customClass="CreditsViewController" customModule="Proverbe_Sans_Fin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0V4-ya-zhn"/>
                         <viewControllerLayoutGuide type="bottom" id="hS4-a5-bO1"/>
@@ -21,38 +21,144 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made with love in Montréal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBO-o2-jhq">
-                                <rect key="frame" x="79" y="321" width="216" height="24"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ty2-0U-nGN">
+                                <rect key="frame" x="41.5" y="63.5" width="292" height="540"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DICTONS SANS FIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLI-fh-LPo">
+                                        <rect key="frame" x="19" y="0.0" width="254" height="48"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="est une application créée par " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl1-i4-v32">
+                                        <rect key="frame" x="8.5" y="78" width="275" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jbz-Lw-E89">
+                                        <rect key="frame" x="0.0" y="142.5" width="292" height="47"/>
+                                        <subviews>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZH-4B-R19">
+                                                <rect key="frame" x="0.0" y="5.5" width="34" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAf-bh-Clr">
+                                                <rect key="frame" x="49" y="0.0" width="194" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="25"/>
+                                                <state key="normal" title="Alexandre Impinna"/>
+                                                <connections>
+                                                    <action selector="meButton:" destination="EEt-r9-xzs" eventType="touchUpInside" id="iqY-EO-j5G"/>
+                                                </connections>
+                                            </button>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n48-f0-KnN">
+                                                <rect key="frame" x="258" y="5.5" width="34" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="à" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-HF-6ut">
+                                        <rect key="frame" x="140.5" y="219.5" width="11" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8I2-CF-UwU">
+                                        <rect key="frame" x="51" y="284" width="190" height="47"/>
+                                        <subviews>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇨🇦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1A-O3-heM">
+                                                <rect key="frame" x="0.0" y="5.5" width="34" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELo-wK-ZcP">
+                                                <rect key="frame" x="49" y="0.0" width="92" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="25"/>
+                                                <state key="normal" title="Montréal"/>
+                                                <connections>
+                                                    <action selector="placeButton:" destination="EEt-r9-xzs" eventType="touchUpInside" id="xK7-i3-xmH"/>
+                                                </connections>
+                                            </button>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇨🇦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wt-ub-oPk">
+                                                <rect key="frame" x="156" y="5.5" width="34" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retrouvez les sources sur" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar0-K7-UOK">
+                                        <rect key="frame" x="28.5" y="361" width="235.5" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bxd-p6-MKM">
+                                        <rect key="frame" x="45.5" y="425.5" width="201" height="50"/>
+                                        <subviews>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-github_2_filled" translatesAutoresizingMaskIntoConstraints="NO" id="pLP-IY-Zpk">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLW-RJ-ciR">
+                                                <rect key="frame" x="65" y="0.0" width="71" height="50"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="25"/>
+                                                <state key="normal" title="GitHub"/>
+                                                <connections>
+                                                    <action selector="githubButton:" destination="EEt-r9-xzs" eventType="touchUpInside" id="V7P-01-nSR"/>
+                                                </connections>
+                                            </button>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-github_2_filled" translatesAutoresizingMaskIntoConstraints="NO" id="gqz-lq-Fvg">
+                                                <rect key="frame" x="151" y="0.0" width="50" height="50"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋🏻" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdY-kT-8Fa">
+                                        <rect key="frame" x="133" y="505.5" width="26" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="aBO-o2-jhq" firstAttribute="centerY" secondItem="7Hz-ve-hDI" secondAttribute="centerY" id="B4B-2c-emg"/>
-                            <constraint firstItem="aBO-o2-jhq" firstAttribute="centerX" secondItem="7Hz-ve-hDI" secondAttribute="centerX" id="iuv-QJ-1c2"/>
+                            <constraint firstItem="ty2-0U-nGN" firstAttribute="centerY" secondItem="7Hz-ve-hDI" secondAttribute="centerY" id="YZW-6O-dYF"/>
+                            <constraint firstItem="ty2-0U-nGN" firstAttribute="centerX" secondItem="7Hz-ve-hDI" secondAttribute="centerX" id="kFv-vW-YEK"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="dXJ-it-3ce" appends="YES" id="2mW-NE-6sc"/>
                         </connections>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="meLeft" destination="IZH-4B-R19" id="kOE-uj-Rop"/>
+                        <outlet property="meRight" destination="n48-f0-KnN" id="Q5u-Ym-DzX"/>
+                        <outlet property="octocatLeft" destination="pLP-IY-Zpk" id="Zja-hB-UtQ"/>
+                        <outlet property="octocatRight" destination="gqz-lq-Fvg" id="p4t-R6-Osk"/>
+                        <outlet property="placeLeft" destination="m1A-O3-heM" id="tdo-ag-Isx"/>
+                        <outlet property="placeRight" destination="0Wt-ub-oPk" id="xPZ-RC-ZKU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZaS-lJ-NjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="dXJ-it-3ce">
+                <swipeGestureRecognizer direction="down" id="dXJ-it-3ce">
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" id="yOW-UZ-9gC"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="733" y="118"/>
+            <point key="canvasLocation" x="730.43478260869574" y="117.39130434782609"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="BYZ-38-t0r" customClass="ViewController" customModule="Proverbe_Sans_Fin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Proverbe_Sans_Fin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -61,9 +167,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap deux fois sur ma tête 😏" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-fA-yRG">
-                                <rect key="frame" x="16" y="287" width="343" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap deux fois sur ma tête 😏" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-fA-yRG">
+                                <rect key="frame" x="20" y="348" width="374" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,6 +176,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="y6c-fA-yRG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0gR-xW-s8f"/>
+                            <constraint firstItem="y6c-fA-yRG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="A3k-6N-2Yu"/>
+                            <constraint firstAttribute="trailing" secondItem="y6c-fA-yRG" secondAttribute="trailing" constant="20" id="evd-mp-WIQ"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="PjB-gc-YqG" appends="YES" id="BXp-i1-WxN"/>
                             <outletCollection property="gestureRecognizers" destination="rkU-Nz-rsu" appends="YES" id="xnc-nL-UQN"/>
@@ -85,7 +195,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="PjB-gc-YqG">
+                <swipeGestureRecognizer direction="up" id="PjB-gc-YqG">
                     <connections>
                         <action selector="swipeToCredits:" destination="BYZ-38-t0r" id="2Ii-ak-APC"/>
                         <segue destination="EEt-r9-xzs" kind="show" identifier="SegueToCredits" id="oDX-bl-xPz"/>
@@ -97,7 +207,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="728.79999999999995" y="792.95352323838085"/>
+            <point key="canvasLocation" x="732" y="950"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="usb-Qf-6Rb">
@@ -116,9 +226,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZb-cc-daV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-119.2" y="792.95352323838085"/>
+            <point key="canvasLocation" x="-58" y="950"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-github_2_filled" width="50" height="50"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yOW-UZ-9gC"/>
     </inferredMetricsTieBreakers>

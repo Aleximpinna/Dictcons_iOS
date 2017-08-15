@@ -21,12 +21,12 @@ class ViewController: UIViewController {
     let proverbes = Proverbe()
     var proverbeLayer = CALayer()
     var layerNumber = 0
-    
-
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad() 
         
+        randomBackground()
+        randomProverbe()
         
     }
     
