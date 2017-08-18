@@ -7,12 +7,12 @@ Ceci est ma première application pour iOS. Elle est inutile, mais est-ce réell
 
 ## Ca fait quoi?
 
-Il s'agit pour le moment d'un générateur de début de dictons (oui, oui, il manque la fin à chaque fois); il y a aussi de beau fonds pour accompagné les phrases 😳
+Il s'agit pour le moment d'un générateur de début de dictons (oui, oui, il manque la fin à chaque fois); il y a aussi de beaux fonds pour accompagné les phrases 😳
 
 ## D'autres fonctionnalités?
 
-Voici les fonctionalités sur lesquels je travaillent :
-- Créer une page avec les crédits de l'application
+Voici les fonctionalités sur lesquels je travaille :
+- ~~Créer une page avec les crédits de l'application~~
 - Exporter les citations dans l'album photos iOS
 
 ## Mais pourquoi fais-tu ça? 😯
