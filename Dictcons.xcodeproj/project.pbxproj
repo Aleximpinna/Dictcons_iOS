@@ -14,6 +14,8 @@
 		C31E16A31F328D7000197F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31E16A11F328D7000197F48 /* LaunchScreen.storyboard */; };
 		C31E16B31F32A08A00197F48 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E16B21F32A08A00197F48 /* CreditsViewController.swift */; };
 		C31E16B51F32A09800197F48 /* Proverbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E16B41F32A09800197F48 /* Proverbe.swift */; };
+		C390B8121F44815A00C9DB19 /* SlideAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390B8111F44815A00C9DB19 /* SlideAnimator.swift */; };
+		C390B8141F44863F00C9DB19 /* SlideAnimatorDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390B8131F44863F00C9DB19 /* SlideAnimatorDown.swift */; };
 		C3B3EF1E1F335CAD007D56F1 /* Hue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B3EF1D1F335CAD007D56F1 /* Hue.framework */; };
 		C3B3EF1F1F335CAD007D56F1 /* Hue.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3B3EF1D1F335CAD007D56F1 /* Hue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -33,7 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C31E16951F328D7000197F48 /* Proverbe Sans Fin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proverbe Sans Fin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31E16951F328D7000197F48 /* Dictcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31E16981F328D7000197F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C31E169A1F328D7000197F48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C31E169D1F328D7000197F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		C31E16A41F328D7000197F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C31E16B21F32A08A00197F48 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		C31E16B41F32A09800197F48 /* Proverbe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proverbe.swift; sourceTree = "<group>"; };
+		C390B8111F44815A00C9DB19 /* SlideAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideAnimator.swift; sourceTree = "<group>"; };
+		C390B8131F44863F00C9DB19 /* SlideAnimatorDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideAnimatorDown.swift; sourceTree = "<group>"; };
 		C3B3EF1D1F335CAD007D56F1 /* Hue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hue.framework; path = Carthage/Build/iOS/Hue.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +73,7 @@
 		C31E16961F328D7000197F48 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C31E16951F328D7000197F48 /* Proverbe Sans Fin.app */,
+				C31E16951F328D7000197F48 /* Dictcons.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +86,8 @@
 				C31E16B21F32A08A00197F48 /* CreditsViewController.swift */,
 				C31E16B41F32A09800197F48 /* Proverbe.swift */,
 				C31E169C1F328D7000197F48 /* Main.storyboard */,
+				C390B8111F44815A00C9DB19 /* SlideAnimator.swift */,
+				C390B8131F44863F00C9DB19 /* SlideAnimatorDown.swift */,
 				C31E169F1F328D7000197F48 /* Assets.xcassets */,
 				C31E16A11F328D7000197F48 /* LaunchScreen.storyboard */,
 				C31E16A41F328D7000197F48 /* Info.plist */,
@@ -92,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C31E16941F328D7000197F48 /* Proverbe Sans Fin */ = {
+		C31E16941F328D7000197F48 /* Dictcons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C31E16A71F328D7000197F48 /* Build configuration list for PBXNativeTarget "Proverbe Sans Fin" */;
+			buildConfigurationList = C31E16A71F328D7000197F48 /* Build configuration list for PBXNativeTarget "Dictcons" */;
 			buildPhases = (
 				C31E16911F328D7000197F48 /* Sources */,
 				C31E16921F328D7000197F48 /* Frameworks */,
@@ -106,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = "Proverbe Sans Fin";
+			name = Dictcons;
 			productName = "Proverbe Sans Fin";
-			productReference = C31E16951F328D7000197F48 /* Proverbe Sans Fin.app */;
+			productReference = C31E16951F328D7000197F48 /* Dictcons.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C31E16901F328D7000197F48 /* Build configuration list for PBXProject "Proverbe Sans Fin" */;
+			buildConfigurationList = C31E16901F328D7000197F48 /* Build configuration list for PBXProject "Dictcons" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -141,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C31E16941F328D7000197F48 /* Proverbe Sans Fin */,
+				C31E16941F328D7000197F48 /* Dictcons */,
 			);
 		};
 /* End PBXProject section */
@@ -183,8 +189,10 @@
 			files = (
 				C31E169B1F328D7000197F48 /* ViewController.swift in Sources */,
 				C31E16B31F32A08A00197F48 /* CreditsViewController.swift in Sources */,
+				C390B8141F44863F00C9DB19 /* SlideAnimatorDown.swift in Sources */,
 				C31E16B51F32A09800197F48 /* Proverbe.swift in Sources */,
 				C31E16991F328D7000197F48 /* AppDelegate.swift in Sources */,
+				C390B8121F44815A00C9DB19 /* SlideAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +350,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C31E16901F328D7000197F48 /* Build configuration list for PBXProject "Proverbe Sans Fin" */ = {
+		C31E16901F328D7000197F48 /* Build configuration list for PBXProject "Dictcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C31E16A51F328D7000197F48 /* Debug */,
@@ -351,7 +359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C31E16A71F328D7000197F48 /* Build configuration list for PBXNativeTarget "Proverbe Sans Fin" */ = {
+		C31E16A71F328D7000197F48 /* Build configuration list for PBXNativeTarget "Dictcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C31E16A81F328D7000197F48 /* Debug */,

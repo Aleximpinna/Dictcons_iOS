@@ -8,8 +8,7 @@
 
 import UIKit
 import Hue
-
-
+import CoreGraphics
 
 class ViewController: UIViewController {
 
@@ -18,10 +17,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var proverbeLabel: UILabel!
     
     var numeroProverbe = 0
+    var numeroPoint = 0
+    var numeroEmoji = 0
+    
     let proverbes = Proverbe()
     var proverbeLayer = CALayer()
     var layerNumber = 0
-        
+    
+    let slideAnimator = SlideAnimator()
+    let pointFinals = ["! ", "? ", ". "]
+    let emojiFinals = ["😳", "🤔", "😏", "🙂", "☹️"]
+    
     override func viewDidLoad() {
         super.viewDidLoad() 
         
@@ -36,17 +42,29 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func changeProverbeAction(_ sender: UITapGestureRecognizer) {
+    @IBAction func changeProverbe(_ sender: UISwipeGestureRecognizer) {
         
         randomBackground()
         randomProverbe()
-
+    }
+    
+    
+    @IBAction func changeProverbeAction(_ sender: UITapGestureRecognizer) {
+        
+        screenShotMethod()
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.error)
+        
+        let gradient = [UIColor.white].gradient()
+        
     }
     
     func randomProverbe() {
         
+        numeroPoint = Int(arc4random_uniform(UInt32(pointFinals.count)))
+        numeroEmoji = Int(arc4random_uniform(UInt32(emojiFinals.count)))
         numeroProverbe = Int(arc4random_uniform(UInt32(proverbes.proverbe.count)))
-        proverbeLabel.text = proverbes.proverbe[numeroProverbe]
+        proverbeLabel.text = proverbes.proverbe[numeroProverbe] + pointFinals[numeroPoint] + emojiFinals[numeroEmoji]
         
     }
     
@@ -79,11 +97,26 @@ class ViewController: UIViewController {
         
     }
     
+    func screenShotMethod() {
+        //Create the UIImage
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        //Save it to the camera roll
+        UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+    }
+    
     func randomFloat(min: Float, max: Float) -> Float {
         return (Float(arc4random()) / 0xFFFFFFFF) * (max - min) + min
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination
+        
+        destination.transitioningDelegate = slideAnimator
+        
+    }
 
 }
-

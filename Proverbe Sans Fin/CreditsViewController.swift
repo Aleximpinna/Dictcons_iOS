@@ -16,6 +16,10 @@ class CreditsViewController: UIViewController {
     @IBOutlet weak var placeRight: UILabel!
     @IBOutlet weak var octocatLeft: UIImageView!
     @IBOutlet weak var octocatRight: UIImageView!
+    @IBOutlet weak var titleLeft: UILabel!
+    @IBOutlet weak var titleRight: UILabel!
+    
+    let slideAnimator = SlideAnimatorDown()
     
     
     override func viewDidLoad() {
@@ -29,6 +33,24 @@ class CreditsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func titleButton(_ sender: UIButton) {
+        
+        if titleLeft.isHidden == true {
+            titleLeft.isHidden = false
+        } else {
+            titleLeft.isHidden = true
+        }
+        
+        if titleRight.isHidden == true {
+            titleRight.isHidden = false
+        } else {
+            titleRight.isHidden = true
+        }
+        
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+        
+    }
 
     @IBAction func meButton(_ sender: UIButton) {
         
@@ -75,6 +97,13 @@ class CreditsViewController: UIViewController {
         } else {
             octocatRight.isHidden = true
         }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination
+        
+        destination.transitioningDelegate = slideAnimator
         
     }
     
