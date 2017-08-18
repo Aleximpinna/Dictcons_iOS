@@ -1,4 +1,4 @@
-# DictonsSansFin
+# Dictcons
 Application iOS qui ne dit que le début des dictons
 
 ## Bonjour!
