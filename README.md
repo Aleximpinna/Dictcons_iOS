@@ -1,4 +1,4 @@
-# DictonsSansFin
+# Dictcons
 Application iOS qui ne dit que le début des dictons
 
 ## Bonjour!
@@ -13,7 +13,7 @@ Il s'agit pour le moment d'un générateur de début de dictons (oui, oui, il ma
 
 Voici les fonctionalités sur lesquels je travaille :
 - ~~Créer une page avec les crédits de l'application~~
-- Exporter les citations dans l'album photos iOS
+- ~~Exporter les citations dans l'album photos iOS~~
 
 ## Mais pourquoi fais-tu ça? 😯
 
