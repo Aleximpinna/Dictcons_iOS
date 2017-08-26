@@ -49,14 +49,39 @@ class ViewController: UIViewController {
     }
     
     
+    //Capture d'écran
     @IBAction func changeProverbeAction(_ sender: UITapGestureRecognizer) {
         
         screenShotMethod()
+        showScreenshotEffect()
         let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.error)
         
         let gradient = [UIColor.white].gradient()
         
+    }
+    
+    func showScreenshotEffect() {
+        
+        let snapshotView = UIView()
+        snapshotView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(snapshotView)
+        
+        let constraints:[NSLayoutConstraint] = [
+            snapshotView.topAnchor.constraint(equalTo: view.topAnchor),
+            snapshotView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            snapshotView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            snapshotView.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor)
+        ]
+        NSLayoutConstraint.activate(constraints)
+        
+        snapshotView.backgroundColor = UIColor.white
+        
+        UIView.animate(withDuration: 0.4, animations: {
+            snapshotView.alpha = 0
+        }) { _ in
+            snapshotView.removeFromSuperview()
+        }
     }
     
     func randomProverbe() {

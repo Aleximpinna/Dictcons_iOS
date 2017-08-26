@@ -323,7 +323,7 @@
 				);
 				INFOPLIST_FILE = "Proverbe Sans Fin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aleximpinna.Proverbe-Sans-Fin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleximpinna.Dictcons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -341,7 +341,7 @@
 				);
 				INFOPLIST_FILE = "Proverbe Sans Fin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aleximpinna.Proverbe-Sans-Fin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleximpinna.Dictcons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
